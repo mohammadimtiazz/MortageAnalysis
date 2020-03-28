@@ -56,6 +56,18 @@ home_insurance_month = home_insurance_year / 12.0
 home_insurance_month_array = []
 
 #HOA -> Home owners association fee per month and calculation
+new_home = True
+if new_home:    
+    if ((home_price >= 200000) and (home_price <= 300000)):
+        hoa_per_month = float(700.0/12.0)
+    else:
+        hoa_per_month = input("Insert HOA per month: ")
+else:
+    if ((home_price >= 200000) and (home_price <= 300000)):
+        hoa_per_month = float(1000.0/12.0)
+    else:
+        hoa_per_month = input("Insert HOA per month: ")
+        
 hoa_per_month = 40.0
 hoa_per_month_array = []
 
